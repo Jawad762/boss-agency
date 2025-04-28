@@ -75,7 +75,7 @@ const PortfolioSection = () => {
         <div className="relative mb-12">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
-              {portfolioItems.map((item, _index) => (
+              {portfolioItems.map(item => (
                 <div 
                   key={item.id} 
                   className="flex-[0_0_70%] md:flex-[0_0_33.333%] min-w-0 px-3"
