@@ -19,10 +19,10 @@ const OurVision = () => {
               <span className="text-primaryGray font-bold flex items-center">VISI<IoMdEye className="text-primaryPurple mt-1" />N</span>
             </h2>
             <p className="text-primaryGray font-semibold text-lg leading-relaxed text-center">
-              To be the leading company in marketing and media content creation
+              {`To be the leading company in marketing and media content creation
               in Saudi Arabia, the Gulf region, and globally, by providing
               innovative solutions that meet our clients' aspirations and
-              reflect their identity in the best possible way.
+              reflect their identity in the best possible way.`}
             </p>
           </div>
         </div>
