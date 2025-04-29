@@ -7,8 +7,8 @@ const NavHero = () => {
     const path = usePathname();
 
     return (
-        <section className='relative h-[65dvh] sm:h-[85dvh] flex flex-col text-white'>
-            <img src="/assets/home/hero.jpg" alt="hero" loading='eager' className='w-full h-full absolute object-cover z-5'/>
+        <section className='relative h-[80dvh] sm:h-[85dvh] flex flex-col text-white'>
+            <img src="/assets/home/hero.jpg" alt="hero" loading='eager' className='w-full h-full absolute brightness-90 object-cover z-5'/>
 
             <div className='flex flex-1 justify-between items-center z-20 container'>
                 <div className='hidden lg:block w-1/4'></div>
@@ -17,7 +17,7 @@ const NavHero = () => {
                         <span className='font-thin'>YOUR PARTNER IN </span>
                         <span className='font-bold'>MEDIA AND MARKETING SUCCESS!</span>
                     </h1>
-                    <button className='bg-primaryGreen rounded-full p-3 font-bold md:text-lg cursor-pointer'>PORTFOLIO</button>
+                    <Link href="/portfolio" className='block bg-primaryGreen rounded-full p-3 font-bold md:text-lg cursor-pointer'>PORTFOLIO</Link>
                 </div>
                 <div className='hidden lg:flex flex-col items-end gap-6 w-1/4 font-bold text-lg'>
                     <div className='flex items-center justify-center gap-2'>
