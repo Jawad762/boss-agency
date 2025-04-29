@@ -2,13 +2,15 @@
 import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import HeroImage from "../../../public/assets/home/hero.jpg"
 
 const NavHero = () => {
     const path = usePathname();
 
     return (
         <section className='relative h-[80dvh] sm:h-[85dvh] flex flex-col text-white'>
-            <img src="/assets/home/hero.jpg" alt="hero" loading='eager' className='w-full h-full absolute brightness-90 object-cover z-5'/>
+            <Image width={2000} height={2000} priority={true} quality={80} placeholder='blur' src={HeroImage} alt="hero" loading='eager' className='w-full h-full absolute brightness-90 object-cover z-5'/>
 
             <div className='flex flex-1 justify-between items-center z-20 container'>
                 <div className='hidden lg:block w-1/4'></div>
