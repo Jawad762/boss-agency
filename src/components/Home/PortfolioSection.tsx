@@ -1,12 +1,12 @@
 "use client"
-import React, { useCallback } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import useEmblaCarousel from 'embla-carousel-react';
 import { portfolioItems } from '@/constants';
 import Autoplay from 'embla-carousel-autoplay';
 
 const PortfolioSection = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+  const [emblaRef] = useEmblaCarousel({ 
     loop: true,
     align: 'start',
     skipSnaps: false,
@@ -16,13 +16,13 @@ const PortfolioSection = () => {
     Autoplay({ playOnInit: true, delay: 2000 })
   ]);
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
+  // const scrollPrev = useCallback(() => {
+  //   if (emblaApi) emblaApi.scrollPrev();
+  // }, [emblaApi]);
 
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
+  // const scrollNext = useCallback(() => {
+  //   if (emblaApi) emblaApi.scrollNext();
+  // }, [emblaApi]);
 
   return (
     <div className="w-full bg-white py-16">
