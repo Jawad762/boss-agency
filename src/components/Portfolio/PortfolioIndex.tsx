@@ -13,7 +13,7 @@ const PortfolioIndex = () => {
           {portfolioItems.map((item) => (
             <div key={item.id} className="w-full h-full">
               <div
-                className={`aspect-square overflow-hidden flex items-center justify-center relative`}
+                className={`aspect-square rounded-lg overflow-hidden flex items-center justify-center relative`}
               >
                 {item.logo && (
                   <img

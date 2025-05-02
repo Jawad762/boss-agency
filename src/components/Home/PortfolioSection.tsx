@@ -3,6 +3,7 @@ import React, { useCallback } from 'react';
 import Link from 'next/link';
 import useEmblaCarousel from 'embla-carousel-react';
 import { portfolioItems } from '@/constants';
+import Autoplay from 'embla-carousel-autoplay';
 
 const PortfolioSection = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
@@ -11,8 +12,9 @@ const PortfolioSection = () => {
     skipSnaps: false,
     containScroll: 'trimSnaps',
     dragFree: true,
-    slidesToScroll: 3
-  });
+  }, [
+    Autoplay({ playOnInit: true, delay: 2000 })
+  ]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -34,9 +36,9 @@ const PortfolioSection = () => {
               {portfolioItems.map(item => (
                 <div 
                   key={item.id} 
-                  className="flex-[0_0_70%] md:flex-[0_0_33.333%] min-w-0 px-3"
+                  className="flex-[0_0_70%] md:flex-[0_0_33.333%] min-w-0 pr-3"
                 >
-                  <div className={`aspect-square overflow-hidden flex items-center justify-center relative`}>
+                  <div className={`aspect-square rounded-lg overflow-hidden flex items-center justify-center relative`}>
                     {item.logo && (
                       <img 
                         src={item.logo} 
@@ -51,7 +53,7 @@ const PortfolioSection = () => {
           </div>
           
           {/* Navigation Arrows */}
-          <button 
+          {/* <button 
             className="absolute left-0 top-1/2 transform bg-white rounded-full h-12 w-12 shadow hidden md:grid place-items-center -translate-y-1/2 text-gray-400 z-10 hover:text-primaryPurple transition-colors"
             onClick={scrollPrev}
             aria-label="Previous slide"
@@ -68,7 +70,7 @@ const PortfolioSection = () => {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
             </svg>
-          </button>
+          </button> */}
         </div>
         
         {/* More Button */}

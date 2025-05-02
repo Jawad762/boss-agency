@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const HomeServicesSection = () => {
   return (
-    <div className="w-full bg-primaryGreen py-16">
+    <div id='services' className="w-full bg-primaryGreen py-16">
       <div className="container mx-auto px-4">
         <div className="mb-4">
           <h2 className="text-3xl sm:text-4xl text-white font-thin leading-none">OUR</h2>

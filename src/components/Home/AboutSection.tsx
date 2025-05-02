@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const AboutSection = () => {
   return (
-    <div className="w-full lg:w-1/3 bg-primaryPurple text-white p-12 flex flex-col items-center justify-center">
+    <div className="w-full lg:w-1/3 bg-primaryPurple text-white p-8 sm:p-12 flex flex-col items-center justify-center">
       <div className="flex flex-col items-center space-y-20 w-full">
         <div className='w-full'>
           <h2 className="text-3xl font-thin">ABOUT</h2>

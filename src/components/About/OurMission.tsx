@@ -7,7 +7,7 @@ const OurMission = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl mb-8 flex flex-col sm:flex-row">
-              <span className="text-primaryPurple font-light flex"><span className="border-4 border-primaryPurple rounded-full w-32 mt-2 sm:mt-3 mb-1"></span>UR</span>
+              <span className="text-primaryPurple font-light flex"><span className="border-4 border-primaryPurple rounded-full w-32 mt-1 sm:mt-3 mb-2 sm:mb-1"></span>UR</span>
               <span className="text-primaryPurple font-bold">MISSION</span>
             </h2>
             <p className="text-primaryGray text-xl font-semibold leading-relaxed max-w-[40ch]">

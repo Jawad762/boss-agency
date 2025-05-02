@@ -10,6 +10,10 @@ interface MobileSidebarProps {
 
 const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
   const path = usePathname();
+  const goToServices = () => {
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+    onClose()
+  }
 
   return (
     <>
@@ -61,14 +65,13 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
               <div className={`ml-2 w-3 h-2 bg-white rounded-l-full ${path === "/about-us" ? "opacity-100" : "opacity-0"}`}></div>
             </Link>
             
-            <Link 
-              href="/services" 
-              className={`text-xl flex items-center ${path === '/services' ? 'font-bold' : 'font-light'}`}
-              onClick={onClose}
+            <button 
+              onClick={goToServices} 
+              className={`text-xl flex items-center w-fit ${path === '/services' ? 'font-bold' : 'font-light'}`}
             >
               SERVICES
               <div className={`ml-2 w-3 h-2 bg-white rounded-l-full ${path === "/services" ? "opacity-100" : "opacity-0"}`}></div>
-            </Link>
+            </button>
             
             <Link 
               href="/portfolio" 

@@ -16,7 +16,7 @@ const OurVision = () => {
           <div className="lg:w-2/3">
             <h2 className="text-4xl sm:text-5xl lg:text-7xl text-center mb-8 flex items-center justify-center">
               <span className="text-primaryGray font-light">OUR</span>
-              <span className="text-primaryGray font-bold flex items-center">VISI<IoMdEye className="text-primaryPurple mt-0.5 sm:mt-1" />N</span>
+              <span className="text-primaryGray font-bold flex items-center">VISI<IoMdEye className="text-primaryPurple mt-0.25 sm:mt-1" />N</span>
             </h2>
             <p className="text-primaryGray font-semibold text-lg leading-relaxed text-center">
               {`To be the leading company in marketing and media content creation

@@ -55,6 +55,10 @@ const Footer = () => {
     { id: 5, icon: 'linkedin', url: '#' }
   ];
 
+  const goToServices = () => {
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+}
+
   return (
     <div className="w-full bg-primaryPurple py-16 text-white">
       <div className="container mx-auto px-4">
@@ -68,7 +72,7 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <Link href="/" className={`${path === '/' ? 'font-bold' : 'font-light'} text-xl`}>HOME</Link>
               <Link href="/about-us" className={`${path === '/about-us' ? 'font-bold' : 'font-light'} text-xl`}>ABOUT US</Link>
-              <Link href="/services" className={`${path === '/services' ? 'font-bold' : 'font-light'} text-xl`}>SERVICES</Link>
+              <button onClick={goToServices} className={`${path === '/services' ? 'font-bold' : 'font-light'} w-fit text-xl`}>SERVICES</button>
               <Link href="/portfolio" className={`${path === '/portfolio' ? 'font-bold' : 'font-light'} text-xl`}>PORFOLIO</Link>
             </div>
           
