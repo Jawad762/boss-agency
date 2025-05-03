@@ -72,8 +72,9 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <Link href="/" className={`${path === '/' ? 'font-bold' : 'font-light'} text-xl`}>HOME</Link>
               <Link href="/about-us" className={`${path === '/about-us' ? 'font-bold' : 'font-light'} text-xl`}>ABOUT US</Link>
-              <button onClick={goToServices} className={`${path === '/services' ? 'font-bold' : 'font-light'} w-fit text-xl`}>SERVICES</button>
-              <Link href="/portfolio" className={`${path === '/portfolio' ? 'font-bold' : 'font-light'} text-xl`}>PORFOLIO</Link>
+              <Link href="/#services" className={`${path === '/services' ? 'font-bold' : 'font-light'} text-xl`}>SERVICES</Link>
+              <Link href="/portfolio" className={`${path === '/portfolio' ? 'font-bold' : 'font-light'} text-xl`}>PORTFOLIO</Link>
+              <Link href="/contact-us" className={`${path === '/contact-us' ? 'font-bold' : 'font-light'} text-xl`}>CONTACT US</Link>
             </div>
           
           <div className='w-full'>

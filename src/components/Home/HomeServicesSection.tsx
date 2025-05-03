@@ -116,7 +116,7 @@ const HomeServicesSection = () => {
         
         {/* Request Quote Button */}
         <div className="flex justify-center">
-          <Link href="/contact">
+          <Link href="/contact-us">
             <button className="bg-primaryPurple text-white px-8 py-3 rounded-full font-bold">
               REQUEST A QUOTATION
             </button>

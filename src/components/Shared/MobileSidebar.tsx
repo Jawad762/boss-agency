@@ -73,14 +73,23 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
               <div className={`ml-2 w-3 h-2 bg-white rounded-l-full ${path === "/services" ? "opacity-100" : "opacity-0"}`}></div>
             </button>
             
-            <Link 
-              href="/portfolio" 
-              className={`text-xl flex items-center ${path === '/portfolio' ? 'font-bold' : 'font-light'}`}
-              onClick={onClose}
-            >
-              PORTFOLIO
-              <div className={`ml-2 w-3 h-2 bg-white rounded-l-full ${path === "/portfolio" ? "opacity-100" : "opacity-0"}`}></div>
-            </Link>
+              <Link 
+                href="/portfolio" 
+                className={`text-xl flex items-center ${path === '/portfolio' ? 'font-bold' : 'font-light'}`}
+                onClick={onClose}
+              >
+                PORTFOLIO
+                <div className={`ml-2 w-3 h-2 bg-white rounded-l-full ${path === "/portfolio" ? "opacity-100" : "opacity-0"}`}></div>
+              </Link>
+
+              <Link 
+                href="/contact-us " 
+                className={`text-xl flex items-center ${path === '/contact-us' ? 'font-bold' : 'font-light'}`}
+                onClick={onClose}
+              >
+                CONTACT US
+                <div className={`ml-2 w-3 h-2 bg-white rounded-l-full ${path === "/contact-us" ? "opacity-100" : "opacity-0"}`}></div>
+              </Link>
           </nav>
         </div>
       </div>

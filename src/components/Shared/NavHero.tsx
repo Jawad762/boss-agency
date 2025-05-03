@@ -1,14 +1,16 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import HeroImage from "../../../public/assets/home/hero.jpg"
 
 const NavHero = () => {
     const path = usePathname();
+    const router = useRouter()
 
     const goToServices = () => {
+        if (path !== "/") router.push("/")
         document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
     }
 
@@ -35,12 +37,16 @@ const NavHero = () => {
                         <div className={`w-3 h-2 bg-white rounded-l-full ${path === "/about-us" ? "opacity-100" : "opacity-0"}`}></div>
                     </div>
                     <div className='flex items-center justify-center gap-2'>
-                        <button onClick={goToServices}>SERVICES</button>
+                        <Link href="/#services">SERVICES</Link>
                         <div className={`w-3 h-2 bg-white rounded-l-full ${path === "/services" ? "opacity-100" : "opacity-0"}`}></div>
                     </div>
                     <div className='flex items-center justify-center gap-2'>
                         <Link href="/portfolio">PORTFOLIO</Link>
                         <div className={`w-3 h-2 bg-white rounded-l-full ${path === "/portfolio" ? "opacity-100" : "opacity-0"}`}></div>
+                    </div>
+                    <div className='flex items-center justify-center gap-2'>
+                        <Link href="/contact-us">CONTACT US</Link>
+                        <div className={`w-3 h-2 bg-white rounded-l-full ${path === "/contact-us" ? "opacity-100" : "opacity-0"}`}></div>
                     </div>
                 </div>
             </div>
