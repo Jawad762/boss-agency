@@ -1,18 +1,12 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import HeroImage from "../../../public/assets/home/hero.jpg"
 
 const NavHero = () => {
     const path = usePathname();
-    const router = useRouter()
-
-    const goToServices = () => {
-        if (path !== "/") router.push("/")
-        document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-    }
 
     return (
         <section className='relative h-[80vh] sm:h-[85vh] flex flex-col text-white'>

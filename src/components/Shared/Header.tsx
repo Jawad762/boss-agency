@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import MobileSidebar from './MobileSidebar'
-
+import Image from 'next/image'
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -10,12 +10,9 @@ const Header = () => {
   };
 
   return (
-    <header className='absolute top-0 inset-x-0 z-30 h-20 py-4'>
+    <header className='absolute top-0 inset-x-0 z-30 h-20 py-6'>
         <div className='container flex justify-between items-center'>
-            <div className="text-white text-3xl font-bold">
-                <span>B</span>OSS
-                <div className="text-xs font-light mt-[-5px] ml-6">AGENCY</div>
-            </div>
+          <Image src="/logo-white.png" alt="logo" width={150} height={150} />
 
             {/* Mobile Menu Button */}
             <button 

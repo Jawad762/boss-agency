@@ -54,11 +54,7 @@ const Footer = () => {
     { id: 4, icon: 'youtube', url: '#' },
     { id: 5, icon: 'linkedin', url: '#' }
   ];
-
-  const goToServices = () => {
-    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-}
-
+  
   return (
     <div className="w-full bg-primaryPurple py-16 text-white">
       <div className="container mx-auto px-4">

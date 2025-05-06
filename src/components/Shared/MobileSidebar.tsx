@@ -32,11 +32,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
         } flex flex-col`}
       >
         {/* Header */}
-        <div className="p-6 flex justify-between items-center border-b border-white/10">
-          <div className="text-white text-2xl font-bold">
-            <span>B</span>OSS
-            <div className="text-xs font-light mt-[-5px] ml-6">AGENCY</div>
-          </div>
+        <div className="p-6 flex justify-end border-b border-white/10">
           <button onClick={onClose} className="text-white">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

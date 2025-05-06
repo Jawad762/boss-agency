@@ -117,7 +117,7 @@ const ContactForm = () => {
     <div className="w-full">
       <div className="mb-10">
         <h1 className="text-4xl sm:text-5xl font-semibold text-primaryPurple mb-4">CONTACT <span className='font-light'>US</span></h1>
-        <p className="text-2xl text-primaryPurple">Say hello, we're just a click away</p>
+        <p className="text-2xl text-primaryPurple">{"Say hello, we're just a click away"}</p>
       </div>
       
       <form className="space-y-8" onSubmit={handleSubmit}>

@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full w-full">
+      <head>
+        <link rel="icon" href="/logo-white.png" />
+      </head>
       <body
         className={`${poppins.variable} antialiased h-full w-full`}
       >
