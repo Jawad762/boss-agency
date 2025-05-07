@@ -14,10 +14,11 @@ const NavHero = () => {
 
             <div className='flex flex-1 justify-between items-center z-20 container'>
                 <div className='hidden lg:block w-1/4'></div>
-                <div className='flex flex-col items-center justify-center gap-6 w-full lg:w-1/2'>
-                    <h1 className='text-5xl md:text-6xl text-center'>
-                        <span className='font-thin'>YOUR PARTNER IN </span>
-                        <span className='font-bold'>MEDIA AND MARKETING SUCCESS!</span>
+                <div className='flex flex-col items-center justify-center gap-6 w-full'>
+                    <h1 className='text-center tracking-wide flex flex-col'>
+                        <span className='text-5xl md:text-6xl font-thin'>YOUR PARTNER IN </span>
+                        <span className='text-5xl md:text-6xl font-semibold'>MEDIA AND MARKETING</span>
+                        <span className='text-6xl md:text-7xl font-extrabold'> SUCCESS!</span>
                     </h1>
                     <Link href="/portfolio" className='block bg-primaryGreen rounded-full p-3 font-bold md:text-lg cursor-pointer'>PORTFOLIO</Link>
                 </div>
