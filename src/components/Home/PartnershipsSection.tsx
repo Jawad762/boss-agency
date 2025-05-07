@@ -10,7 +10,7 @@ const PartnershipsSection = () => {
     <div className="w-full lg:w-1/3 bg-primaryBeige text-gray-700 p-8 sm:p-12 flex flex-col items-center justify-center">
       <div className="flex flex-col items-center space-y-20 w-full">
         <div className='w-full'>
-          <h2 className="text-3xl font-thin">OUR</h2>
+          <h2 className="text-3xl font-thin text-primaryGray">OUR</h2>
           <h3 className="text-4xl font-bold text-primaryGray">PARTNERSHIPS</h3>
         </div>
         
