@@ -12,8 +12,29 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Boss Agency",
-  description: "Boss Agency is a marketing agency that helps businesses grow their online presence."
+  title: "Boss Agency | Digital Marketing & Branding",
+  description: "Boss Agency is a full-service marketing agency specializing in branding and digital marketing strategies that drive growth and online presence.",
+  keywords: "digital marketing, branding, social media marketing, SEO, boss agency",
+  metadataBase: new URL('https://bossagency.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: "Boss Agency | Digital Marketing & Branding",
+    description: "Boss Agency is a full-service marketing agency specializing in branding and digital marketing strategies that drive growth and online presence.",
+    url: 'https://bossagency.com',
+    siteName: 'Boss Agency',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Boss Agency - Digital Marketing & Branding',
+      },
+    ],
+  }
 };
 
 export default function RootLayout({
