@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className='absolute top-0 inset-x-0 z-30 h-20 py-6'>
         <div className='container flex justify-between items-center'>
-          <Image src="/logo-white.png" alt="logo" width={150} height={150} className="h-[50px] w-fit md:h-[50px]" />
+          <Image src="/logo-white.png" alt="logo" width={150} height={150} className="h-[40px] w-fit md:h-[50px]" />
 
             {/* Mobile Menu Button */}
             <button 
