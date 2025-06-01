@@ -10,10 +10,8 @@ const validateEmail = (email: string) => {
 
 export async function POST(request: NextRequest) {
   try {
-    // Parse request body
     const { name, email, phone, message } = await request.json();
     
-    // Validate required fields
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: 'Name, email, and message are required fields' },
@@ -21,7 +19,6 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    // Validate email format
     if (!validateEmail(email)) {
       return NextResponse.json(
         { error: 'Please provide a valid email address' },
@@ -29,7 +26,6 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    // Validate message length
     if (message.length < 10) {
       return NextResponse.json(
         { error: 'Your message should be at least 10 characters long' },
@@ -37,20 +33,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Send email using Resend
     const data = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>', // Replace with your verified domain
       to: ['info@boss.sa'], // Replace with recipient email
       subject: `Contact Form Submission from ${name}`,
-      text: `
-        Name: ${name}
-        Email: ${email}
-        Phone: ${phone || 'Not provided'}
-        
-        Message:
-        ${message}
-      `,
-      // You can also use HTML for a nicer email
       html: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>

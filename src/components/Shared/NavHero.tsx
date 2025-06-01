@@ -20,7 +20,9 @@ const NavHero = () => {
                         <span className='text-4xl md:text-6xl font-semibold'>MEDIA AND MARKETING</span>
                         <span className='text-5xl md:text-7xl font-extrabold'> SUCCESS!</span>
                     </h1>
-                    <Link href="/portfolio" className='block bg-primaryGreen rounded-full px-6 py-3 font-bold md:text-lg cursor-pointer'>PORTFOLIO</Link>
+                    {path === "/" && (
+                        <Link href="/portfolio" className='block bg-primaryGreen rounded-full px-6 py-3 font-bold md:text-lg cursor-pointer'>PORTFOLIO</Link>
+                    )}
                 </div>
                 <div className='hidden lg:flex flex-col items-end gap-6 w-1/4 font-bold text-lg'>
                     <div className='flex items-center justify-center gap-2'>
