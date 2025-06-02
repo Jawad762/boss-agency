@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
- 
+import { DOMAIN } from '@/constants'
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://bossagency.com/sitemap.xml',
+    sitemap: `${DOMAIN}/sitemap.xml`,
   }
 }

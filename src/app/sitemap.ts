@@ -1,27 +1,28 @@
+import { DOMAIN } from '@/constants'
 import type { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://bossagency.com',
+      url: DOMAIN,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 1,
     },
     {
-      url: 'https://bossagency.com/portfolio',
+      url: `${DOMAIN}/portfolio`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://bossagency.com/contact-us',
+      url: `${DOMAIN}/contact-us`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.8,
     },
     {
-      url: 'https://bossagency.com/about-us',
+      url: `${DOMAIN}/about-us`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.8,

@@ -2,6 +2,7 @@ import React from 'react';
 import ContactForm from '@/components/Contact/ContactForm';
 import ContactInfo from '@/components/Contact/ContactInfo';
 import type { Metadata } from 'next';
+import { DOMAIN } from '@/constants';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Boss Agency - Get in Touch',
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Boss Agency | Get in Touch With Our Team',
     description: 'Contact Boss Agency for digital marketing, branding, and other marketing services. Get in touch with our team.',
-    url: 'https://bossagency.com/contact-us',
+    url: `${DOMAIN}/contact-us`,
     type: 'website',
     images: [
       {

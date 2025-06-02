@@ -1,3 +1,5 @@
+export const DOMAIN = "https://mybossagency.com"
+
 export const portfolioItems = [
     { 
       id: 1, 

@@ -4,6 +4,7 @@ import "./globals.css";
 import NavHero from "@/components/Shared/NavHero";
 import Header from "@/components/Shared/Header";
 import Footer from "@/components/Shared/Footer";
+import { DOMAIN } from "@/constants";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -15,14 +16,14 @@ export const metadata: Metadata = {
   title: "Boss Agency | Digital Marketing & Branding",
   description: "Boss Agency is a full-service marketing agency specializing in branding and digital marketing strategies that drive growth and online presence.",
   keywords: "digital marketing, branding, social media marketing, SEO, boss agency",
-  metadataBase: new URL('https://bossagency.com'),
+  metadataBase: new URL(DOMAIN),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Boss Agency | Digital Marketing & Branding",
     description: "Boss Agency is a full-service marketing agency specializing in branding and digital marketing strategies that drive growth and online presence.",
-    url: 'https://bossagency.com',
+    url: DOMAIN,
     siteName: 'Boss Agency',
     locale: 'en_US',
     type: 'website',

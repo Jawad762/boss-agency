@@ -1,6 +1,7 @@
 import React from 'react'
 import PortfolioIndex from '@/components/Portfolio/PortfolioIndex'
 import type { Metadata } from 'next'
+import { DOMAIN } from '@/constants';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Boss Agency - Our Work',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Boss Agency Portfolio | Our Work and Case Studies',
     description: 'Explore Boss Agency\'s portfolio showcasing our best work in digital marketing, branding, and more.',
-    url: 'https://bossagency.com/portfolio',
+    url: `${DOMAIN}/portfolio`,
     type: 'website',
     images: [
       {

@@ -3,6 +3,7 @@ import AboutUs from '@/components/About/AboutUs';
 import OurVision from '@/components/About/OurVision';
 import OurMission from '@/components/About/OurMission';
 import type { Metadata } from 'next';
+import { DOMAIN } from '@/constants';
 
 export const metadata: Metadata = {
   title: 'About Us | Boss Agency - Digital Marketing',
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Boss Agency | Our Story & Mission',
     description: 'Learn about Boss Agency, our vision, mission and the dedicated team behind our full-service marketing agency.',
-    url: 'https://bossagency.com/about-us',
+    url: `${DOMAIN}/about-us`,
     type: 'website',
     images: [
       {
