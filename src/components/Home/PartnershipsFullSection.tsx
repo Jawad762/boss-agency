@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const PartnershipsFullSection = () => {
@@ -45,12 +46,14 @@ const PartnershipsFullSection = () => {
         {/* Partners Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {partners.map((partner) => (
-            <div key={partner.id} className="bg-primaryBeige p-4 flex flex-col items-center justify-between rounded-xl">
-              <div className="flex items-center justify-center h-32 mb-6">
-                <img 
+            <div key={partner.id} className="bg-primaryBeige px-4 py-12 flex flex-col items-center justify-between gap-4 rounded-xl">
+              <div className="flex items-center justify-center flex-1">
+                <Image
+                  height={200} 
+                  width={200} 
                   src={partner.logo} 
                   alt={partner.name} 
-                  className="max-h-full max-w-full object-contain" 
+                  className=''
                 />
               </div>
               <div className='w-full'>
