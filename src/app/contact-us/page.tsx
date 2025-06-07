@@ -3,6 +3,7 @@ import ContactForm from '@/components/Contact/ContactForm';
 import ContactInfo from '@/components/Contact/ContactInfo';
 import type { Metadata } from 'next';
 import { DOMAIN } from '@/constants';
+import FoundersSection from '@/components/Contact/FoundersSection';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Boss Agency - Get in Touch',
@@ -28,9 +29,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="w-full min-h-screen bg-white flex flex-col lg:flex-row justify-center gap-10 lg:gap-20 py-10 container">
-      <ContactForm />
-      <ContactInfo />
-    </div>
+    <section className='w-full min-h-screen bg-white py-10 container'>
+      <FoundersSection />
+      <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-20">
+        <ContactForm />
+        <ContactInfo />
+      </div>
+    </section>
   );
 } 
