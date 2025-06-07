@@ -1,7 +1,6 @@
 import AboutSection from '@/components/Home/AboutSection';
 import CompanySummary from '@/components/Home/CompanySummary';
 import ConceptToScreenSection from '@/components/Home/ConceptToScreenSection';
-import FoundersSection from '@/components/Contact/FoundersSection';
 import HomeServicesSection from '@/components/Home/HomeServicesSection';
 import PartnershipsFullSection from '@/components/Home/PartnershipsFullSection';
 import PartnershipsSection from '@/components/Home/PartnershipsSection';
